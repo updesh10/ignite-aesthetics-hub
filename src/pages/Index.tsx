@@ -1,5 +1,6 @@
 import { DataSource } from "@/components/DataSource";
 import { FileUpload } from "@/components/FileUpload";
+import { VideoUpload } from "@/components/VideoUpload";
 import { ChatInterface } from "@/components/ChatInterface";
 import { RagStore } from "@/components/RagStore";
 
@@ -24,13 +25,14 @@ const Index = () => {
             <DataSource />
           </div>
 
-          {/* Center Column - RAG Store and File Upload */}
-          <div className="lg:col-span-4 flex flex-col gap-6">
+          {/* Center Column - RAG Store and Upload Components */}
+          <div className="lg:col-span-4 flex flex-col gap-4">
             <div className="flex-1 flex items-center justify-center">
               <RagStore />
             </div>
-            <div className="h-fit">
+            <div className="grid grid-cols-1 gap-4 h-fit">
               <FileUpload />
+              <VideoUpload />
             </div>
           </div>
 
