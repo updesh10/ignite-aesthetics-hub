@@ -2,6 +2,7 @@ import { DataSource } from "@/components/DataSource";
 import { FileUpload } from "@/components/FileUpload";
 import { ChatInterface } from "@/components/ChatInterface";
 import { RagStore } from "@/components/RagStore";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -39,6 +40,7 @@ const Index = () => {
             <ChatInterface />
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
